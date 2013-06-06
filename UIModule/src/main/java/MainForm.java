@@ -10,78 +10,95 @@ public class MainForm{
     public static void main(String[] args) {
         JFrame frame = new JFrame("MainForm");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(1000,700);
-        MainPanel panel = new MainPanel();
-        JButton button = new JButton("dfff");
-        panel.add(button);
+        frame.setSize(1000,600);
+        MainPanel panel = new MainPanel(frame);
+//        UserMainPanel panel = new UserMainPanel();
         frame.add(panel);
         frame.setVisible(true);
+        frame.setResizable(false);
 
     }
 }
 
 class MainPanel extends javax.swing.JPanel {
 
-    ButtonGroup buttonGroup1 = new javax.swing.ButtonGroup();
-    JButton nextButton = new javax.swing.JButton();
-    JLabel mainLabel = new javax.swing.JLabel();
-    JRadioButton radioButton1 = new javax.swing.JRadioButton();
-    JRadioButton radioButton2 = new javax.swing.JRadioButton();
+    JLabel jLabel1;
+    JButton jButton1;
+    JButton jButton2;
+    JFrame mainFrame;
 
-    public MainPanel(){
-       initComponents();
+    public MainPanel(JFrame frame){
+        initComponents();
+        mainFrame = frame;
+
     }
+
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+        LoginDialog loginDialog = new LoginDialog(mainFrame, true);
+        loginDialog.setLocationRelativeTo(mainFrame);
+        loginDialog.setVisible(true);
+    }
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+        RegistrationDialog regDialog = new RegistrationDialog(mainFrame, true);
+        regDialog.setLocationRelativeTo(mainFrame);
+        regDialog.setVisible(true);
+    }
+
 
 
     @SuppressWarnings("unchecked")
     private void initComponents() {
 
 
-        nextButton.setText("Далее");
+        jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\goodspeed\\Desktop\\Logo_T-Systems_01.jpg")); // NOI18N
+
+        jButton1.setText("Вход");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
 
-        mainLabel.setText("Выберите способ введения матрицы");
-
-        radioButton1.setText("Из файла");
-
-
-        radioButton2.setText("С клавиатуры");
-
-//        FlowLayout layout = new FlowLayout();
-//        this.setLayout(layout);
-//        layout.addLayoutComponent("button", nextButton);
+        jButton2.setText("Регистрация");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
+                                .addGap(132, 132, 132)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel1)
                                         .addGroup(layout.createSequentialGroup()
-                                                .addGap(267, 267, 267)
-                                                .addComponent(nextButton))
+                                                .addGap(308, 308, 308)
+                                                .addComponent(jButton1))
                                         .addGroup(layout.createSequentialGroup()
-                                                .addGap(182, 182, 182)
-                                                .addComponent(mainLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGap(251, 251, 251)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(radioButton2)
-                                                        .addComponent(radioButton1))))
-                                .addContainerGap(201, Short.MAX_VALUE))
+                                                .addGap(291, 291, 291)
+                                                .addComponent(jButton2)))
+                                .addContainerGap(149, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(mainLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 127, Short.MAX_VALUE)
-                                .addComponent(radioButton1)
-                                .addGap(51, 51, 51)
-                                .addComponent(radioButton2)
-                                .addGap(105, 105, 105)
-                                .addComponent(nextButton)
-                                .addGap(123, 123, 123))
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(131, 131, 131)
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                                .addComponent(jButton1)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton2)
+                                .addGap(92, 92, 92))
         );
     }
 
