@@ -1,5 +1,6 @@
 package forms;
 
+import coreobjects.User;
 import requests.RegistrationRequest;
 import services.RegistrationService;
 
@@ -141,7 +142,8 @@ public class RegistrationDialog extends javax.swing.JDialog  {
         registrationRequest.email = emailField.getText();
 
         RegistrationService registrationService = new RegistrationService(socket);
-        registrationService.sendData(registrationRequest);
+
+        User user = registrationService.sendData(registrationRequest);
 
         mainForm.getContentPane().removeAll();
         UserMainPanel userMainPanel = new UserMainPanel(socket);

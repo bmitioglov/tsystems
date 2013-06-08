@@ -1,5 +1,6 @@
 package services;
 
+import coreobjects.User;
 import requests.RegistrationRequest;
 
 import java.io.*;
@@ -14,46 +15,29 @@ public class RegistrationService {
         this.socket = s;
     }
 
-    public void sendData(RegistrationRequest registrationRequest){
-//        try {
-//            System.out.println("Sending RegistrationRequest to server");
-//            OutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
-//            dataOutputStream.write("Register me".getBytes());
-//            dataOutputStream.close();
-//        } catch (IOException e) {
-//            System.out.println("io exception");// do something here
-//        }
+    public User sendData(RegistrationRequest registrationRequest){
         try {
-        InputStream sin = socket.getInputStream();
-        OutputStream sout = socket.getOutputStream();
+            System.out.println("Sending request object to server...");
+            OutputStream sout = socket.getOutputStream();
+            ObjectOutputStream out = new ObjectOutputStream(sout);
+            out.writeObject(registrationRequest);
+            out.flush(); // заставляем поток закончить передачу данных.
 
-        // Конвертируем потоки в другой тип, чтоб легче обрабатывать текстовые сообщения.
-        DataInputStream in = new DataInputStream(sin);
-        //DataOutputStream out = new DataOutputStream(sout);
-
-        ObjectOutputStream out = new ObjectOutputStream(sout);
-
-        // Создаем поток для чтения с клавиатуры.
-        BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
-        String line = null;
-        System.out.println();
-
-//        while (true) {
-        line = "Register me please"; // ждем пока пользователь введет что-то и нажмет кнопку Enter.
-        System.out.println("Sending this line to the server...");
-        out.writeObject(registrationRequest);
-        //out.writeUTF(line); // отсылаем введенную строку текста серверу.
-        out.flush(); // заставляем поток закончить передачу данных.
-        //line = in.readUTF(); // ждем пока сервер отошлет строку текста.
-        //System.out.println("The server was very polite. It sent me this : " + line);
-        //System.out.println("Looks like the server is pleased with us. Go ahead and enter more lines.");
-        System.out.println();
-//        }
-    } catch (Exception x) {
+            //получаем ответ
+            InputStream sin = socket.getInputStream();
+            ObjectInputStream in = new ObjectInputStream(sin);
+            user =  (User) in.readObject();
+            System.out.println("user.id in client = "+ user.userId);
+            System.out.println();
+            return user;
+    } catch (Exception e) {
         System.out.println("Ошибка в клиенте при регистрации");
+        e.printStackTrace();
+        return null;
     }
 
     }
 
+    private User user;
     private Socket socket;
 }

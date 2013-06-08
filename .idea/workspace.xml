@@ -11,15 +11,16 @@
     <file path="/MainUIClass.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370473120166" ignored="false" />
     <file path="/fragment.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370706209919" ignored="false" />
     <file path="/MainForm.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370700222963" ignored="false" />
-    <file path="/RegistrationDialog.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370709483674" ignored="false" />
+    <file path="/RegistrationDialog.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370716108493" ignored="false" />
     <file path="/UserMainPanel.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370704655444" ignored="false" />
-    <file path="/RegistrationService.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370709462984" ignored="false" />
-    <file path="/MainListener.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370709836601" ignored="false" />
+    <file path="/RegistrationService.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370716011973" ignored="false" />
+    <file path="/MainListener.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370716556504" ignored="false" />
     <file path="/LoginDialog.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370700366898" ignored="false" />
     <file path="/LoginService.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370700869665" ignored="false" />
     <file path="/GetInboxLettersService.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370703333745" ignored="false" />
     <file path="/Request.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370708369561" ignored="false" />
     <file path="/RegistrationRequest.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370708387394" ignored="false" />
+    <file path="/User.java" changelist="dff2500e-292e-4cf5-90a5-a921455b30f2" time="1370716171993" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,34 +72,6 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/BusinessLogic/src/main/java/clientlisteners/MainListener.java" line="27" class="clientlisteners.MainListener" package="clientlisteners">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/UIModule/src/main/java/services/RegistrationService.java" line="26" class="services.RegistrationService" package="services">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/UIModule/src/main/java/services/GetInboxLettersService.java" line="16" class="services.GetInboxLettersService" package="services">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -140,52 +113,10 @@
       <file leaf-file-name="RegistrationService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UIModule/src/main/java/services/RegistrationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="0" selection-start="2117" selection-end="2117" vertical-scroll-proportion="0.0">
+            <state line="33" column="26" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistrationDialog.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UIModule/src/main/java/forms/RegistrationDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#RegistrationDialog#0;class#RegistrationDialog#0" expanded="false" />
-                <element signature="e#1564#1745#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisteredUserRequest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/main/java/requests/RegisteredUserRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="6" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMainPanel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UIModule/src/main/java/forms/UserMainPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="22" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistrationRequest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/main/java/requests/RegistrationRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="34" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -193,9 +124,33 @@
       <file leaf-file-name="MainListener.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BusinessLogic/src/main/java/clientlisteners/MainListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="753" selection-end="753" vertical-scroll-proportion="0.25185186">
+            <state line="32" column="55" selection-start="984" selection-end="984" vertical-scroll-proportion="0.42424244">
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/src/main/java/coreobjects/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="29" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistrationDialog.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UIModule/src/main/java/forms/RegistrationDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="148" column="62" selection-start="8852" selection-end="8852" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#RegistrationDialog#0;class#RegistrationDialog#0" expanded="false" />
+                <element signature="method#initComponents#0;class#RegistrationDialog#0" expanded="false" />
+                <element signature="e#1589#1770#0" expanded="true" />
+                <element signature="e#1759#1760#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -234,7 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/UIModule/pom.xml" />
         <option value="$PROJECT_DIR$/BusinessLogic/pom.xml" />
         <option value="$PROJECT_DIR$/UIModule/src/main/java/forms/MainForm.java" />
@@ -247,8 +201,9 @@
         <option value="$PROJECT_DIR$/Common/src/main/java/RegistrationRequest.java" />
         <option value="$PROJECT_DIR$/Common/src/main/java/requests/RegisteredUserRequest.java" />
         <option value="$PROJECT_DIR$/Common/src/main/java/requests/RegistrationRequest.java" />
-        <option value="$PROJECT_DIR$/UIModule/src/main/java/forms/RegistrationDialog.java" />
         <option value="$PROJECT_DIR$/UIModule/src/main/java/services/RegistrationService.java" />
+        <option value="$PROJECT_DIR$/UIModule/src/main/java/forms/RegistrationDialog.java" />
+        <option value="$PROJECT_DIR$/Common/src/main/java/coreobjects/User.java" />
         <option value="$PROJECT_DIR$/BusinessLogic/src/main/java/clientlisteners/MainListener.java" />
       </list>
     </option>
@@ -590,6 +545,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coreobjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demailproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tsystems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="BusinessLogic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -838,7 +823,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.4909091" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39182281" sideWeight="0.4909091" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5037879" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -851,7 +836,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.225" sideWeight="0.94548553" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2439394" sideWeight="0.6013629" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24469697" sideWeight="0.6081772" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25212947" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6712095" order="2" side_tool="false" content_ui="tabs" />
@@ -921,15 +906,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/UIModule/src/main/java/forms/LoginDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UIModule/src/main/java/services/GetDeletedLettersService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="6" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
@@ -958,15 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UIModule/src/main/java/forms/UserMainPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="22" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -988,22 +955,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UIModule/src/main/java/services/RegistrationService.java">
+    <entry file="file://$PROJECT_DIR$/Common/src/main/java/requests/RegistrationRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="2117" selection-end="2117" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="11" column="34" selection-start="225" selection-end="225" vertical-scroll-proportion="0.3462963">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UIModule/src/main/java/forms/RegistrationDialog.java">
+    <entry file="file://$PROJECT_DIR$/UIModule/src/main/java/forms/UserMainPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.0">
+        <state line="53" column="22" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.735">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#RegistrationDialog#0;class#RegistrationDialog#0" expanded="false" />
-            <element signature="e#1564#1745#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1027,23 +990,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/main/java/requests/RegistrationRequest.java">
+    <entry file="file://$PROJECT_DIR$/UIModule/src/main/java/forms/RegistrationDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
+        <state line="148" column="62" selection-start="8852" selection-end="8852" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#RegistrationDialog#0;class#RegistrationDialog#0" expanded="false" />
+            <element signature="method#initComponents#0;class#RegistrationDialog#0" expanded="false" />
+            <element signature="e#1589#1770#0" expanded="true" />
+            <element signature="e#1759#1760#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/main/java/coreobjects/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="29" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UIModule/src/main/java/services/RegistrationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="26" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/src/main/java/requests/RegisteredUserRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
+        <state line="9" column="27" selection-start="195" selection-end="195" vertical-scroll-proportion="0.28333333">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BusinessLogic/src/main/java/clientlisteners/MainListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="753" selection-end="753" vertical-scroll-proportion="0.25185186">
+        <state line="32" column="55" selection-start="984" selection-end="984" vertical-scroll-proportion="0.42424244">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
