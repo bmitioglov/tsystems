@@ -6,7 +6,7 @@
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">
-            jdbc:mysql://localhost:3306/TestHibernateSchema
+            jdbc:mysql://localhost:3306/demail
         </property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">root</property>
@@ -15,6 +15,6 @@
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
         <!-- Mapping files -->
-        <mapping resource="User.hbm.xml"/>
+        <mapping class="entities.UserEntity"/>
     </session-factory>
 </hibernate-configuration>

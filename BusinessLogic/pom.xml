@@ -23,7 +23,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>clientlisteners.MainListener</mainClass>
+                            <mainClass>clientlisteners.MainRequestManager</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

@@ -7,7 +7,7 @@ import java.io.Serializable;
  * Mitioglov Boris
  */
 public class User implements Serializable {
-    public int userId;
+    public long userId;
     public String firstName;
     public String secondName;
 }

@@ -1,18 +1,25 @@
-package Entities;
+package entities;
 
 /**
  * Created with IntelliJ IDEA.
  * Mitioglov Boris
  */
-import javax.persistence.Entity;
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 
 @Entity
+@Table(name="Users")
 public class UserEntity {
 
     public UserEntity(){
 
     }
 
+    @Id
+    @GeneratedValue(generator="increment")
+    @GenericGenerator(name="increment", strategy = "increment")
+    @Column(name="id")
     public Long getId() {
         return id;
     }
@@ -20,7 +27,7 @@ public class UserEntity {
     public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
-
+    @Column(name="birthday")
     public String getBirthday() {
 
         return birthday;
@@ -31,6 +38,7 @@ public class UserEntity {
         this.email = email;
     }
 
+    @Column(name="email")
     public String getEmail() {
 
         return email;
@@ -41,6 +49,7 @@ public class UserEntity {
         this.phone = phone;
     }
 
+    @Column(name="phone")
     public String getPhone() {
 
         return phone;
@@ -51,6 +60,7 @@ public class UserEntity {
         this.secondName = secondName;
     }
 
+    @Column(name="secondName")
     public String getSecondName() {
 
         return secondName;
@@ -61,6 +71,7 @@ public class UserEntity {
         this.firstName = firstName;
     }
 
+    @Column(name="firstName")
     public String getFirstName() {
 
         return firstName;
